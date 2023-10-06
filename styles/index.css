@@ -2,4 +2,110 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* ----------------------- Header ------------------------- */
+
+header{
+    max-width: 1920px;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(177, 157, 157, 0.61);
+    box-shadow: 0 0 10px black, 0 0 20px black, inset 0 0 15px black;
+}
+
+
+.header-container{
+    max-width: 1920px;
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    
+}
+
+.homebtn{
+    width: 250px;
+    height: 100px;
+    font-size: 35px;
+    font-style: italic;
+    background-color: rgba(177, 157, 157, 0.61);;
+    border: none;
+    box-shadow: 0 0 10px black, 0 0 20px black, inset 0 0 15px black;
+}
+
+.homebtn:hover{
+    background-color: rgba(114, 50, 27, 0.527);
+    transition: 0.5s ease;
+}
+
+.nav-container{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 0 0 black, 0 0 20px black, inset 0 0 15px black;
+}
+
+.nav-ul{
+    max-width: 800px;
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-li{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.nav-links{
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+    font-weight: 400;
+}
+
+/* .nav-links:hover{
+    background-color: rgba(114, 50, 27, 0.527);
+    transition: 0.5s ease;
+} */
+
+/* ----------------------- End Header ------------------------ */
+
+.section-1-container{
+    max-width: 1920px;
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(177, 157, 157, 0.61);
+}
+
+.image-section-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.myself{
+    max-width: 500px;
+    width: 100%;
+    min-height: 350;
+    margin: 20px;
+    border-radius: 25px;
+    border: 15px black;
+    transition: 0.5s;
+    box-shadow: 0 0 10px black, 0 0 20px black, inset 0 0 15px black;
 }
