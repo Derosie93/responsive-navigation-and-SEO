@@ -73,12 +73,17 @@ header{
     font-weight: 400;
 }
 
-/* .nav-links:hover{
-    background-color: rgba(114, 50, 27, 0.527);
+.nav-links:hover{
+    text-shadow: 0 0 10px #fff,
+    0 0 10px #fff, 0 0 15px rgb(255, 114, 62),
+    0 0 20px rgb(255, 114, 62), 0 0 25px rgb(255, 114, 62),
+    0 0 30px rgb(255, 114, 62);
     transition: 0.5s ease;
-} */
+}
 
 /* ----------------------- End Header ------------------------ */
+
+/* ------------------------ Section 1 ------------------------ */
 
 .section-1-container{
     max-width: 1920px;
@@ -109,3 +114,6 @@ header{
     transition: 0.5s;
     box-shadow: 0 0 10px black, 0 0 20px black, inset 0 0 15px black;
 }
+
+/* ------------------------ End Section -----------------------*/
+
