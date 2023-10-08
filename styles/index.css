@@ -17,26 +17,11 @@ header{
 
 
 .header-container{
-    max-width: 1920px;
     width: 100%;
-    min-height: 200px;
-    display: flex;
-    
-}
-
-.homebtn{
-    width: 250px;
     height: 100px;
-    font-size: 35px;
-    font-style: italic;
-    background-color: rgba(177, 157, 157, 0.61);;
-    border: none;
-    box-shadow: 0 0 10px black, 0 0 20px black, inset 0 0 15px black;
-}
-
-.homebtn:hover{
-    background-color: rgba(114, 50, 27, 0.527);
-    transition: 0.5s ease;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-container{
@@ -45,13 +30,12 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 10px 0 0 black, 0 0 20px black, inset 0 0 15px black;
+   
 }
 
 .nav-ul{
-    max-width: 800px;
-    width: 100%;
-    min-height: 80px;
+    width: 80%;
+    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -81,6 +65,48 @@ header{
     transition: 0.5s ease;
 }
 
+.burger-container{
+    display: none;
+}
+
+.mobile-nav{
+    position: absolute;
+    top: 5px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mobile-nav-links{
+    list-style: none;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.39);
+    margin-right: 10%;
+    
+  
+}
+
+.mobile-li{
+    margin-bottom: 20%;
+}
+
+.mobile-li:hover{
+    text-shadow: 0 0 10px #fff,
+    0 0 10px #fff, 0 0 15px rgb(255, 114, 62),
+    0 0 20px rgb(255, 114, 62), 0 0 25px rgb(255, 114, 62),
+    0 0 30px rgb(255, 114, 62);
+    transition: 0.5s ease;
+}
+
+.mobile-links{
+    text-decoration: none;
+    color: white;
+    font-size: 52px;
+}
+
 .fa-bars{
     width: 150px;
     display: flex;
@@ -97,16 +123,17 @@ header{
 .section-1-container{
     max-width: 1920px;
     width: 100%;
-    min-height: 200px;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(177, 157, 157, 0.61);
+    
 }
 
 .image-section-container{
     width: 100%;
-    height: 100vh;
+    height: 420px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,12 +151,14 @@ header{
     box-shadow: 0 0 10px black, 0 0 20px black, inset 0 0 15px black;
 }
 
+
 /* ------------------------ End Section 1 -----------------------*/
 
 
-/* @media screen and (max-width: 1100px) {
+@media screen and (max-width: 1000px) {
     .myself{
         width: 80%;
+        
     }
 }
 
@@ -137,17 +166,37 @@ header{
     .nav-ul{
         display: none;
     }
+   
 }
 
+
+
 @media screen and (max-width: 600px) {
-    .fa-bars {
+
+    .burger-container{
+        display: flex;
+        width: 100%;
+        height: 100px;
+    }
+
+    .mobile-nav-links{
         display: none;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-nav-links.show{
+       display: flex;
+    }
+
+    .fa-bars {
+        flex-direction: column;
         position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: #333;
+        top: 20px;
+        left: 25px;
         width: 100%;
+        
     }
 
     .fa-bars{
@@ -158,4 +207,6 @@ header{
         display: block;
         cursor: pointer;
     }
-} */
+}
+
+
